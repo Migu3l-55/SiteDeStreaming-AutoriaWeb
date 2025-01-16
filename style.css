@@ -33,7 +33,7 @@ h1 {
 #search-bar {
     position: absolute;
     top: 14px;
-    right: 16px;
+    right: 10px;
 }
 
 #search-bar input {
@@ -48,6 +48,23 @@ h1 {
 }
 
 
+/*  teste de como fazer as rows que rolam na tela  */
+.row {
+    max-height: fit-content;
+    border: 1px solid grey;
+    display: flex;
+    overflow: auto;
+}
+
+.row .item {
+    min-width: 160px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    background-color: lightgray;
+    border: 1px solid gray;
+}
+
 @media (min-width: 1400px) {
     #nav-account-buttons {
         position: absolute;
@@ -59,13 +76,13 @@ h1 {
 @media (max-width: 790px) {
     h1 {
         padding-top: 6px;
-        margin-left: 6px;
+        margin-left: 10px;
     }
 
     #search-bar {
         position: absolute;
-        top: 16px;
-        right: 6px;
+        top: 14px;
+        right: 10px;
     }
 
     #navlist ul {
