@@ -1,73 +1,93 @@
-body {
-    margin: 0;
+body { 
+    margin: 0; 
+    color: white;
 }
 
-#navbar {
-    display: flex;
-    align-items: center;
-    width: 100%;
+header {
     background-color: black;
-    color: whitesmoke;
-    opacity: 1.0;
-    padding: 0%;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 12px;
+    margin-left: 16px;
+}
+
+#navlist ul {
+    display: flex;
+    list-style: none;
     justify-content: space-between;
-    height: 90px;
+    padding-bottom: 10px;
     font-size: large;
 }
 
-#navbar h1 {
-    margin: 0px;
-    margin-top: 0px;
-    padding-top: 6px;
-    padding-left: 12px;
+#navlist ul li a {
+    color: lightgray;
+    text-decoration: none;
 }
 
-#navlist * {
-    padding: 0;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-#navbar input {
-    height: 18px;
+#navlist ul li a:hover {        
+    border-bottom: 1px solid lightgray;
 }
 
 #search-bar {
-    display: flex;
-    padding-right: 16px;
+    position: absolute;
+    top: 14px;
+    right: 16px;
 }
+
+#search-bar input {
+    width: 36vw;
+    border-radius: 6px;
+}
+
 #navlist ul {
-    display: flex;
-    justify-content: space-between;
-    height: 20px;
-    margin: 0;
-    list-style-type: none;
-}
-
-#nav-account-buttons input {
+    padding-left: 30%;
+    padding-right: 30%;
     margin: 0;
 }
 
-@media (max-width: 700px) {
-    #navbar {
-        display: block;
+
+@media (min-width: 1400px) {
+    #nav-account-buttons {
+        position: absolute;
+        right: 16px;
+        top: 40px;
     }
+}
 
-    #navlist * {
-        margin-left: 0;
-        margin-right: 0;
+@media (max-width: 790px) {
+    h1 {
+        padding-top: 6px;
+        margin-left: 6px;
     }
 
     #search-bar {
-        display: flexbox;
         position: absolute;
-        top: 0;
-        right: 0;
-        padding-top: 12px;
-        padding-right: 16px;
+        top: 16px;
+        right: 6px;
     }
 
-    #nav-account-buttons {
-        margin-right: 10px;
+    #navlist ul {
+        padding-left: 16%;
+        padding-right: 16%;
+    }
+    
+    #search-bar input {
+        width: 54vw;
+    }
+}
+
+@media (max-width: 700px) {
+    #navlist ul {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+@media (max-width: 470px) {
+    #navlist ul {
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
