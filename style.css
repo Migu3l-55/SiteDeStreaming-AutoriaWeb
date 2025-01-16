@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    opacity: 1.0;
+    padding: 0%;
+    justify-content: space-between;
+    height: 90px;
+    font-size: large;
+}
+
+#navbar h1 {
+    margin: 0px;
+    margin-top: 0px;
+    padding-top: 6px;
+    padding-left: 12px;
+}
+
+#navlist * {
+    padding: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#navbar input {
+    height: 18px;
+}
+
+#search-bar {
+    display: flex;
+    padding-right: 16px;
+}
+#navlist ul {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    margin: 0;
+    list-style-type: none;
+}
+
+#nav-account-buttons input {
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    #navbar {
+        display: block;
+    }
+
+    #navlist * {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #search-bar {
+        display: flexbox;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-top: 12px;
+        padding-right: 16px;
+    }
+
+    #nav-account-buttons {
+        margin-right: 10px;
+    }
+}
