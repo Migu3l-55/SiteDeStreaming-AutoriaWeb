@@ -9,7 +9,7 @@
 <body>
     <header id="navbar">
         <h1>Stream</h1> 
-        <div id="navlist">
+        <div id="navlist" style="">
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Filmes</a></li>
@@ -22,8 +22,8 @@
                 </li>
             </ul>
         </div>
-        <div id="sidebar-button">
-            <p>▶</p>
+        <div id="sidebar-button" onclick="active_sidebar(document.getElementById('navlist').style.display)">
+            <p id="sidebar-button-icon" style="padding-left: 5px;">▶</p>
         </div>
         <div id="search-bar">
             <input type="text" name="pesquisar" id="input-pesquisar" placeholder="Pesquisar">
@@ -68,6 +68,6 @@
     </div>
     <br>
 
-<!--     <script src="script.js"></script> -->
+    <script src="script.js"></script>
 </body>
 </html>
