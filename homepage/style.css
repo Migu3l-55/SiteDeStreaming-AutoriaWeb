@@ -103,9 +103,14 @@ h1 {
 }
 
 @media (max-width: 700px) {
+    #navlist {
+        display: flex;
+    }
+
     #navlist ul {
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 10%;
+        padding-right: 10%;
+        width: 80%;
     }
 }
 
@@ -115,13 +120,13 @@ h1 {
     }
 
     #navlist {
-        display: block;
+        /* display: block; */
         position: absolute;
-        height: 100%;
+        height: calc(100% - 2em - 8px);
         width: 200px;
         background-color: black;
         box-shadow:  0 0 5px rgba(0, 0, 0, 0.6);
-        /* display: none; */
+        display: none;
     }
     
     #navlist > ul  {
@@ -150,13 +155,12 @@ h1 {
 
     }
 
-    #sidebar-button p {
+    #sidebar-button #sidebar-button-icon {
         max-inline-size: 100%;
         font-size: 30px;
         font-weight: bold;
         text-align: center;
         margin: 0;
-        padding-left: 5px;
         margin-top: -2px;
     }
 }
